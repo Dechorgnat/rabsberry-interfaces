@@ -2,13 +2,16 @@
 # -*- coding: utf-8 -*-
 
 import binascii #pour convertir l'hexa en string
-from urllib2 import Request, urlopen, URLError, HTTPError #pour pouvoir appeler une url
-import socket #pour afficher gérer les sockets (utilisé ici que pour afficher une erreur de timeout)
+import requests
 
-import sys
-import time
+def call_rabsberry_event_api(rfid_id, action):
+    # TODO manque url from conf
+    url = "http://locahost:4321/api/event"
+    payload = { 'actor_type':'RFID_READER', 'actor_id':'mir:ror', 'tag': rfid_id, 'action': action}
+    r = requests.post(url, json=payload)
+    print(r.text)
 
-
+# TODO verrifier quel /dev/hidrawx est le bon
 '''
 cat /sys/class/hidraw/hidraw2/device/uevent
 DRIVER=hid-generic
@@ -42,13 +45,17 @@ while erreur_generale == False:
     #on test les 2 premiers octets pour savoir si une puce RFID est posée ou retirée
     if donnee[0:2] == '\x02\x01': #puce posée
       print "Puce %s posée" % rfid_id
+      call_rabsberry_event_api(rfid_id, "IN")
 
     elif donnee[0:2] == '\x02\x02': #puce retirée
       print "Puce %s retirée." % rfid_id
+      call_rabsberry_event_api(rfid_id, "OUT")
 
     #on test le ler octet, s'il vaut 1, alors une action à été faite sur le mir:ror
     if donnee[0] == '\x01':
       if donnee[1] == '\x04':
         print "Le mir:ror est retourné face vers le haut"
+        call_rabsberry_event_api("0", "ON")
       if donnee[1] == '\x05':
         print "Le mir:ror est retourné face vers le bas"
+        call_rabsberry_event_api("0", "OFF")
