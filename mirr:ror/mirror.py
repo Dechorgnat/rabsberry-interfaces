@@ -6,10 +6,11 @@ import requests
 
 def call_rabsberry_event_api(rfid_id, action):
     # TODO manque url from conf
-    url = "http://locahost:4321/api/event"
-    payload = { 'actor_type':'RFID_READER', 'actor_id':'mir:ror', 'tag': rfid_id, 'action': action}
+    url = "http://localhost:4321/api/event"
+    payload = { 'actor_type':'RFID_READER', 'actor_id':'mir:ror', 'rfid_id': rfid_id, 'action': action}
+    # print payload
     r = requests.post(url, json=payload)
-    print(r.text)
+    #print(r.text)
 
 # TODO verrifier quel /dev/hidrawx est le bon
 '''
