@@ -1,7 +1,9 @@
 <s> lapin </s>
-<s> dark vador
+<s> dark vador </s>
 <s> météo </s>
 <s> deux </s>
 <s> trois </s>
 <s> radio </s>
 <s> RTL </s>
+<s> Europe 1 </s>
+<s> Ephemeride </s>
