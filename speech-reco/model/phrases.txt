@@ -1,0 +1,7 @@
+<s> lapin </s>
+<s> dark vador
+<s> météo </s>
+<s> deux </s>
+<s> trois </s>
+<s> radio </s>
+<s> RTL </s>
