@@ -1,28 +1,29 @@
 lapin
-météo
-Un
+un
 deux
 trois
+météo
+actuel
+prévision
 radio
 RTL
 Europe 1
-dark Vador 
-Actuel
-Prévision
-On
-Off
-Saint du jour
-Éphéméride 
-Heure
-Ouvre
-Ferme
-Éteint 
-Allume
-Lumière 
-Porte
-Salon
-Cuisine
-Volet
-Chambre
+saint du jour
+éphéméride
+heure
+ouvre
+ferme
+éteint
+allume
+on
+off
+lumière
+porte
+salon
+cuisine
+volet
+chambre
+imite
 R2
-
+Dark Vador
+Yoda
