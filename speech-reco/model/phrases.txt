@@ -1,9 +1,29 @@
 <s> lapin </s>
-<s> dark vador </s>
-<s> météo </s>
+<s> meteo </s>
 <s> deux </s>
 <s> trois </s>
 <s> radio </s>
 <s> RTL </s>
-<s> Europe 1 </s>
-<s> Ephemeride </s>
+<s> Europe_1 </s>
+<s> ephemeride </s>
+<s> un </s>
+<s> actuel </s>
+<s> prevision </s>
+<s> saint_du_jour </s>
+<s> heure </s>
+<s> ouvre </s>
+<s> ferme </s>
+<s> eteint </s>
+<s> allume </s>
+<s> on </s>
+<s> off </s>
+<s> lumiere </s>
+<s> porte </s>
+<s> salon </s>
+<s> cuisine </s>
+<s> volet </s>
+<s> chambre </s>
+<s> imite </s>
+<s> R2 </s>
+<s> dark vador </s>
+<s> Yoda </s>

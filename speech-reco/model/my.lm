@@ -1,43 +1,204 @@
+Language model created by QuickLM on Sat Feb 20 02:24:30 EST 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 29 sentences and 32 words
+
 \data\
-ngram 1=10
-ngram 2=14
-ngram 3=7
+ngram 1=32
+ngram 2=61
+ngram 3=88
 
 \1-grams:
--0.8451 </s> -0.3010
--0.7782 <s> -0.2218
--1.6232 RTL -0.2341
--1.6232 dark -0.2906
--1.6232 deux -0.2341
--1.6232 lapin -0.2341
--1.6232 météo -0.2341
--1.6232 radio -0.2341
--1.6232 trois -0.2341
--1.6232 vador -0.3010
+-0.7020 </s> -0.2049
+-0.7020 <s> -0.1474
+-2.4654 ACTUEL -0.2049
+-2.4654 ALLUME -0.2049
+-2.4654 CHAMBRE -0.2049
+-2.4654 CUISINE -0.2049
+-2.4654 DARK -0.2995
+-2.4654 DEUX -0.2049
+-2.4654 EPHEMERIDE -0.2049
+-2.4654 ETEINT -0.2049
+-2.4654 EUROPE_1 -0.2049
+-2.4654 FERME -0.2049
+-2.4654 HEURE -0.2049
+-2.4654 IMITE -0.2049
+-2.4654 LAPIN -0.2049
+-2.4654 LUMIERE -0.2049
+-2.4654 METEO -0.2049
+-2.4654 OFF -0.2049
+-2.4654 ON -0.2049
+-2.4654 OUVRE -0.2049
+-2.4654 PORTE -0.2049
+-2.4654 PREVISION -0.2049
+-2.4654 R2 -0.2049
+-2.4654 RADIO -0.2049
+-2.4654 RTL -0.2049
+-2.4654 SAINT_DU_JOUR -0.2049
+-2.4654 SALON -0.2049
+-2.4654 TROIS -0.2049
+-2.4654 UN -0.2049
+-2.4654 VADOR -0.2049
+-2.4654 VOLET -0.2049
+-2.4654 YODA -0.2049
 
 \2-grams:
--1.1461 <s> RTL 0.0000
--1.1461 <s> dark 0.0000
--1.1461 <s> deux 0.0000
--1.1461 <s> lapin 0.0000
--1.1461 <s> météo 0.0000
--1.1461 <s> radio 0.0000
--1.1461 <s> trois 0.0000
--0.3010 RTL </s> -0.3010
--0.3010 dark vador -0.3010
--0.3010 deux </s> -0.3010
--0.3010 lapin </s> -0.3010
--0.3010 météo </s> -0.3010
--0.3010 radio </s> -0.3010
--0.3010 trois </s> -0.3010
+-0.6021 </s> </s> -0.3010
+-0.6021 <s> <s> -0.1761
+-2.0645 <s> ACTUEL 0.0000
+-2.0645 <s> ALLUME 0.0000
+-2.0645 <s> CHAMBRE 0.0000
+-2.0645 <s> CUISINE 0.0000
+-2.0645 <s> DARK 0.0000
+-2.0645 <s> DEUX 0.0000
+-2.0645 <s> EPHEMERIDE 0.0000
+-2.0645 <s> ETEINT 0.0000
+-2.0645 <s> EUROPE_1 0.0000
+-2.0645 <s> FERME 0.0000
+-2.0645 <s> HEURE 0.0000
+-2.0645 <s> IMITE 0.0000
+-2.0645 <s> LAPIN 0.0000
+-2.0645 <s> LUMIERE 0.0000
+-2.0645 <s> METEO 0.0000
+-2.0645 <s> OFF 0.0000
+-2.0645 <s> ON 0.0000
+-2.0645 <s> OUVRE 0.0000
+-2.0645 <s> PORTE 0.0000
+-2.0645 <s> PREVISION 0.0000
+-2.0645 <s> R2 0.0000
+-2.0645 <s> RADIO 0.0000
+-2.0645 <s> RTL 0.0000
+-2.0645 <s> SAINT_DU_JOUR 0.0000
+-2.0645 <s> SALON 0.0000
+-2.0645 <s> TROIS 0.0000
+-2.0645 <s> UN 0.0000
+-2.0645 <s> VOLET 0.0000
+-2.0645 <s> YODA 0.0000
+-0.3010 ACTUEL </s> -0.1761
+-0.3010 ALLUME </s> -0.1761
+-0.3010 CHAMBRE </s> -0.1761
+-0.3010 CUISINE </s> -0.1761
+-0.3010 DARK VADOR 0.0000
+-0.3010 DEUX </s> -0.1761
+-0.3010 EPHEMERIDE </s> -0.1761
+-0.3010 ETEINT </s> -0.1761
+-0.3010 EUROPE_1 </s> -0.1761
+-0.3010 FERME </s> -0.1761
+-0.3010 HEURE </s> -0.1761
+-0.3010 IMITE </s> -0.1761
+-0.3010 LAPIN </s> -0.1761
+-0.3010 LUMIERE </s> -0.1761
+-0.3010 METEO </s> -0.1761
+-0.3010 OFF </s> -0.1761
+-0.3010 ON </s> -0.1761
+-0.3010 OUVRE </s> -0.1761
+-0.3010 PORTE </s> -0.1761
+-0.3010 PREVISION </s> -0.1761
+-0.3010 R2 </s> -0.1761
+-0.3010 RADIO </s> -0.1761
+-0.3010 RTL </s> -0.1761
+-0.3010 SAINT_DU_JOUR </s> -0.1761
+-0.3010 SALON </s> -0.1761
+-0.3010 TROIS </s> -0.1761
+-0.3010 UN </s> -0.1761
+-0.3010 VADOR </s> -0.1761
+-0.3010 VOLET </s> -0.1761
+-0.3010 YODA </s> -0.1761
 
 \3-grams:
+-1.7634 <s> <s> ACTUEL
+-1.7634 <s> <s> ALLUME
+-1.7634 <s> <s> CHAMBRE
+-1.7634 <s> <s> CUISINE
+-1.7634 <s> <s> DARK
+-1.7634 <s> <s> DEUX
+-1.7634 <s> <s> EPHEMERIDE
+-1.7634 <s> <s> ETEINT
+-1.7634 <s> <s> EUROPE_1
+-1.7634 <s> <s> FERME
+-1.7634 <s> <s> HEURE
+-1.7634 <s> <s> IMITE
+-1.7634 <s> <s> LAPIN
+-1.7634 <s> <s> LUMIERE
+-1.7634 <s> <s> METEO
+-1.7634 <s> <s> OFF
+-1.7634 <s> <s> ON
+-1.7634 <s> <s> OUVRE
+-1.7634 <s> <s> PORTE
+-1.7634 <s> <s> PREVISION
+-1.7634 <s> <s> R2
+-1.7634 <s> <s> RADIO
+-1.7634 <s> <s> RTL
+-1.7634 <s> <s> SAINT_DU_JOUR
+-1.7634 <s> <s> SALON
+-1.7634 <s> <s> TROIS
+-1.7634 <s> <s> UN
+-1.7634 <s> <s> VOLET
+-1.7634 <s> <s> YODA
+-0.3010 <s> ACTUEL </s>
+-0.3010 <s> ALLUME </s>
+-0.3010 <s> CHAMBRE </s>
+-0.3010 <s> CUISINE </s>
+-0.3010 <s> DARK VADOR
+-0.3010 <s> DEUX </s>
+-0.3010 <s> EPHEMERIDE </s>
+-0.3010 <s> ETEINT </s>
+-0.3010 <s> EUROPE_1 </s>
+-0.3010 <s> FERME </s>
+-0.3010 <s> HEURE </s>
+-0.3010 <s> IMITE </s>
+-0.3010 <s> LAPIN </s>
+-0.3010 <s> LUMIERE </s>
+-0.3010 <s> METEO </s>
+-0.3010 <s> OFF </s>
+-0.3010 <s> ON </s>
+-0.3010 <s> OUVRE </s>
+-0.3010 <s> PORTE </s>
+-0.3010 <s> PREVISION </s>
+-0.3010 <s> R2 </s>
+-0.3010 <s> RADIO </s>
 -0.3010 <s> RTL </s>
--0.3010 <s> dark vador
--0.3010 <s> deux </s>
--0.3010 <s> lapin </s>
--0.3010 <s> météo </s>
--0.3010 <s> radio </s>
--0.3010 <s> trois </s>
+-0.3010 <s> SAINT_DU_JOUR </s>
+-0.3010 <s> SALON </s>
+-0.3010 <s> TROIS </s>
+-0.3010 <s> UN </s>
+-0.3010 <s> VOLET </s>
+-0.3010 <s> YODA </s>
+-0.3010 ACTUEL </s> </s>
+-0.3010 ALLUME </s> </s>
+-0.3010 CHAMBRE </s> </s>
+-0.3010 CUISINE </s> </s>
+-0.3010 DARK VADOR </s>
+-0.3010 DEUX </s> </s>
+-0.3010 EPHEMERIDE </s> </s>
+-0.3010 ETEINT </s> </s>
+-0.3010 EUROPE_1 </s> </s>
+-0.3010 FERME </s> </s>
+-0.3010 HEURE </s> </s>
+-0.3010 IMITE </s> </s>
+-0.3010 LAPIN </s> </s>
+-0.3010 LUMIERE </s> </s>
+-0.3010 METEO </s> </s>
+-0.3010 OFF </s> </s>
+-0.3010 ON </s> </s>
+-0.3010 OUVRE </s> </s>
+-0.3010 PORTE </s> </s>
+-0.3010 PREVISION </s> </s>
+-0.3010 R2 </s> </s>
+-0.3010 RADIO </s> </s>
+-0.3010 RTL </s> </s>
+-0.3010 SAINT_DU_JOUR </s> </s>
+-0.3010 SALON </s> </s>
+-0.3010 TROIS </s> </s>
+-0.3010 UN </s> </s>
+-0.3010 VADOR </s> </s>
+-0.3010 VOLET </s> </s>
+-0.3010 YODA </s> </s>
 
 \end\
