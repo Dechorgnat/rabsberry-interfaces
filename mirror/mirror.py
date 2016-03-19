@@ -3,6 +3,8 @@
 
 import binascii #pour convertir l'hexa en string
 import requests
+import signal
+import sys
 
 def call_rabsberry_event_api(rfid_id, action):
     # TODO manque url from conf
@@ -12,6 +14,13 @@ def call_rabsberry_event_api(rfid_id, action):
     r = requests.post(url, json=payload)
     #print(r.text)
 
+def signal_term_handler(signal, frame):
+    print
+    print 'Terminating Mirror'
+    mirror.close()
+    sys.exit(0)
+	
+	
 # TODO verrifier quel /dev/hidrawx est le bon
 '''
 cat /sys/class/hidraw/hidraw2/device/uevent
@@ -27,6 +36,8 @@ MODALIAS=hid:b0003g0001v00001DA8p00001301
 #ouverture du port hidraw0 (port du mir:ror) en mode lecture octet par octet (rb)
 mirror = open("/dev/hidraw0", "rb")
 
+signal.signal(signal.SIGTERM, signal_term_handler)
+signal.signal(signal.SIGINT, signal_term_handler)
 erreur_generale = False
 while erreur_generale == False:
   #on lit les données envoyées par le mir:ror
@@ -60,3 +71,4 @@ while erreur_generale == False:
       if donnee[1] == '\x05':
         print "Le mir:ror est retourné face vers le bas"
         call_rabsberry_event_api("0", "OFF")
+  sleep(1)
