@@ -4,6 +4,7 @@
 import binascii #pour convertir l'hexa en string
 import requests
 
+
 def call_rabsberry_event_api(rfid_id, action):
     # TODO manque url from conf
     url = "http://localhost:4321/api/event"
@@ -11,6 +12,7 @@ def call_rabsberry_event_api(rfid_id, action):
     # print payload
     r = requests.post(url, json=payload)
     #print(r.text)
+
 
 # TODO verrifier quel /dev/hidrawx est le bon
 '''
