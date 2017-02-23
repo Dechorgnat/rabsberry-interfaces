@@ -20,16 +20,12 @@ def call_rabsberry_event_api(rfid_id, action):
     r = requests.post(url, json=payload)
     #print(r.text)
 
-<<<<<<< HEAD:mirr:ror/mirror.py
-
-=======
 def signal_term_handler(signal, frame):
     logging.info('Terminating Mirror')
     mirror.close()
     sys.exit(0)
 	
 	
->>>>>>> 375ad999e3343a2b914a06ff3c6ef77d998722b9:mirror/mirror.py
 # TODO verrifier quel /dev/hidrawx est le bon
 '''
 cat /sys/class/hidraw/hidraw2/device/uevent
